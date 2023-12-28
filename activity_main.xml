@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_linkBlueTooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="linkBlueTooth"
+        android:text="连接蓝牙"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_blueToothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="蓝牙状态：未连接"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="接收消息："
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etxt_receiveMessage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:focusable="false"
+        android:editable="false"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="发送消息:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etxt_sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:text=""
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="send"
+        android:text="发送"
+        android:textSize="12sp" />
+</LinearLayout>
